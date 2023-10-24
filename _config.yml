@@ -1,0 +1,73 @@
+### your site title here
+
+title: Hasan Tanvir Iqbal
+description: ML Engineer | Data Science  #subtitle | affiliations | motto
+
+baseurl: /portfolio #name of GitHub repository
+url: "https://tanvirhundredone.github.io" #custom url to be used instead of GitHub repository
+email: "tanviriqbal101@gmail.com"
+
+# Pagination
+paginate: 4
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
+
+# Social media links in footer
+twitter: "Sleepe26"  #"https://twitter.com/Sleepe26"
+linkedin: "tanvir-iqbal101"   #"https://www.linkedin.com/in/tanvir-iqbal101"
+# stackoverflow: "#"
+github: "TanvirHundredOne"   #"https://github.com/TanvirHundredOne"
+# researchgate: "#"
+# orcid: "#"
+# quora: "#"
+# instagram: "#"
+# facebook: "#"
+
+
+# Markdown
+highlighter: rouge
+markdown: kramdown
+
+# Tracker
+analytics:
+
+# optimization -> compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+#collection
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+    order:
+      - docai.md
+      - slipstream.md
+      - UsageForecast.md
+      - MLOps.md
+      - docuassistant.md
+      - graphrecommendation.md
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE.md
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-email-protect
+  - jekyll-target-blank
