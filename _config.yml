@@ -3,7 +3,7 @@
 title: Hasan Tanvir Iqbal
 description: ML Engineer | Data Science  #subtitle | affiliations | motto
 
-baseurl: /portfolio #name of GitHub repository
+baseurl: / #name of GitHub repository
 url: "https://tanvirhundredone.github.io" #custom url to be used instead of GitHub repository
 email: "tanviriqbal101@gmail.com"
 
